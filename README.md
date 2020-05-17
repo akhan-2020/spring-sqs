@@ -1,4 +1,4 @@
-# SpringBoot app with AWS SQS integration
+# Spring Boot app with AWS SQS integration
 
 **A simple Spring Boot REST application that integrates with AWS SQS (FIFO queues) using the Spring AWS messaging library, it demonstrates usage for both sending and consuming messages from a specific queue.**
 
