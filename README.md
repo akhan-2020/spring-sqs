@@ -5,7 +5,9 @@
 
 1. Setup a SQS FIFO queue in your AWS account, update the Queue name accordingly in the SQSRestController
 2. Replace the credentials in the application.properties file with your AWS account/user credentials
-3. Build & start the application.
+3. Build and start the application.
+	* 	 `mvn clean package`
+	* 	 `mvn spring-boot:run`
 4. Post a message to the /customer endpoint as shown below, this will post the customer object to the SQS Queue and will subsequently be received via the listener method  within the controller
 
 	**curl -X POST localhost:8080/customer -H 'Content-type:application/json' -d '{"customerId": "1999", "name": "Rogers Nelson", "state":"MN"}'**
